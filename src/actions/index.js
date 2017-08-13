@@ -1,22 +1,21 @@
-export const INCREMENT = 'INCREMENT';
-export const DECREMENT = 'DECREMENT';
-export const SET_DIFF = 'SET_DIFF';
+import * as types from './ActionTypes';
+
 
 export function increment() {
   return {
-    type: INCREMENT
+    type: types.INCREMENT
   };
 }
 
 export function decrement() {
   return {
-    type: DECREMENT
+    type: types.DECREMENT
   };
 }
 
-export function setDiff(value) {
+export function setColor(color) {
   return {
-    type: SET_DIFF,
-    diff: value
+    type: types.SET_COLOR,
+    color
   };
 }
