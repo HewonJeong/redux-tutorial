@@ -4,8 +4,8 @@ import {combineReducers} from 'redux';
 const counterInitialState = {
   value: 0,
   diff: 1
-};
-
+}
+// Todo Divide reducers
 const counter = (state = counterInitialState, action) => {
   switch (action.type) {
     case INCREMENT:
